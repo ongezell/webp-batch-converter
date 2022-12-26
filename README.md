@@ -21,23 +21,23 @@ Notes:
 
 If you want to add support for more file types to the script, you can modify the following line of code:
 
-'if file.endswith(".jpg") or file.endswith(".png"):'
+`if file.endswith(".jpg") or file.endswith(".png"):`
 
 
 This line of code checks if the file is a `.jpg` or `.png` image. To add support for more file types, you can add additional conditions to this line of code using the `or` operator. For example, to add support for `.gif` and `.bmp` file types, you can modify the line of code like this:
 
-'if file.endswith(".jpg") or file.endswith(".png") or file.endswith(".gif") or file.endswith(".bmp"):'
+`if file.endswith(".jpg") or file.endswith(".png") or file.endswith(".gif") or file.endswith(".bmp"):`
 
 
 You can add as many file types as you want by separating them with the `or` operator. Just make sure to include the dot (`.`) before the file extension.
 
 Note that this will only modify the file types that the script will consider when converting images. To actually save the images in the desired format, you will also need to modify the line of code that saves the images in the `output` directory:
 
-'image.save("output/" + filename.split(".")[0] + ".webp", "webp", quality=quality)'
+`image.save("output/" + filename.split(".")[0] + ".webp", "webp", quality=quality)`
 
 To save the images in a different format, you will need to change the file extension and the format parameter in the `save` function. For example, to save the images in `.gif` format, you can modify the line of code like this:
 
-'image.save("output/" + filename.split(".")[0] + ".gif", "gif", quality=quality)'
+`image.save("output/" + filename.split(".")[0] + ".gif", "gif", quality=quality)`
 
 
 
