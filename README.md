@@ -1,6 +1,6 @@
 # webp-batch-converter
 
-This script converts all .jpg and .png images in the current working directory to .webp format and saves them in an output directory. The user can specify the quality of the converted images, which cam be a value from 10 to 100.
+This script converts all .jpg and .png images in the folder where the script is run to .webp format and saves them in an output directory. The user can specify the quality of the converted images, which cam be a value from 10 to 100.
 
 Dependencies:
 - os: for interacting with the operating system, such as creating directories and getting the current working directory
